@@ -1,0 +1,13 @@
+# Core (always needed)
+numpy>=1.24
+
+# Semantic embeddings (recommended). Comment out only if you intend to run
+# with --embedder tfidf permanently.
+sentence-transformers>=2.2
+
+# Vector stores -- install whichever backend(s) you plan to use.
+faiss-cpu>=1.7.4      # for vector_backend="faiss"
+chromadb>=0.4.22       # for vector_backend="chroma"
+
+# Optional: only needed if you use embedder.OpenAIEmbedder
+# openai>=1.0
